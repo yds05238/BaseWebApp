@@ -17,6 +17,10 @@ app.get('/about', function(request, response) {
   response.render('pages/about');
 });
 
+app.get('/contact', function(request, response) {
+  response.render('pages/contact');
+});
+
 app.get('/projects', function(request, response) {
   response.render('pages/projects');
 });
@@ -24,6 +28,7 @@ app.get('/projects', function(request, response) {
 app.get('/', function(request, response) {
   response.render('pages/index');
 });
+
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
