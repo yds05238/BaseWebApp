@@ -25,9 +25,6 @@ app.get('/projects', function(request, response) {
   response.render('pages/projects');
 });
 
-app.get('/', function(request, response) {
-  response.render('pages/index');
-});
 
 
 app.listen(app.get('port'), function() {
